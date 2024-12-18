@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,233,0.8660714285714286) 100%);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        nav {
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        img {
+            height: 100px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            font-size: 30px;
+            color: black;
+            text-align: left;
+            margin-right: 650px;
+        }
+        h3 {
+            margin: 20px 340px;
+            color: black;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h5 {
+            margin: 5px 290px;
+            color: #333;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .science {
+            width: 240px;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 640px;
+            color: red;
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+        }
+        .ten {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            height: 500px;
+        }
+        .stu {
+            background-color: transparent;
+            color: white;
+            height: 120%;
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin-left: 40px;
+            width: 45%;
+        }
+        .content {
+            font-size: 22px;
+            font-style: italic;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .tenlogo {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        strong {
+            color: green;
+        }
+        .description {
+            margin-left: 50px;
+            width: 70%;
+            background-color: transparent;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+        .math {
+            margin-left: 275px;
+            color: cyan;
+            font-size: 24px;
+            font-style: oblique;
+        }
+        li {
+            margin-left: 275px;
+        }
+        ul {
+            color: darkmagenta;
+        }
+        .career {
+            margin-top: 10px;
+            margin-left: 80px;
+            color: rgb(66, 9, 237);
+            font-size: 24px;
+            font-style: oblique;
+        }
+        .twelve {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between; /* Create space between left and right sections */
+            height: 500px;
+        }
+        .stud {
+            margin-top: 110px;
+            margin-right: 80px;
+            background-color: transparent;
+            height: 120%;
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+            display: flex;
+            width: 45%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .descript {
+            margin-left: 50px;
+            margin-top: 100px;
+            width: 70%;
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: left;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+        .commerce {
+            width: 250px;
+            text-align: center;
+            margin-top: 280px;
+            margin-left: 650px;
+            color: red;
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+        }
+        .stuc{  background-color: transparent;
+            color: white;
+            height: 120%; 
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin-left: 40px;
+            width: 45%;
+           }  .tent {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            height: 500px;
+        }
+        .arts {
+            width: 250px;
+            text-align: center;
+            margin-top: 180px;
+            margin-left: 650px;
+            color: red;
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);}
+            .twelveart {
+           
+            display: flex;
+            justify-content: space-between; /* Create space between left and right sections */
+            height: 500px;
+        } .studart {
+            margin-top: 50px;
+            margin-right: 80px;
+            background-color: transparent;
+            height: 120%;
+            box-shadow: 0px 4px 15px rgba(6, 6, 6, 0.3);
+            display: flex;
+            width: 45%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .descriptart {
+            margin-left: 50px;
+            margin-top: 50px;
+            width: 70%;
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: left;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+        footer {margin-top: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="LogoMakerCa-1731770225979__1_-removebg-preview.png" alt="CareerNest Logo">
+            <div class="container">
+                <h1>Welcome!</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Here your Journey Begins, What you want to become in your Life</h3>
+        </section>
+        <section>
+            <h5>
+                After Class 10, students in many education systems have to choose a stream based on their interests and career goals.<br> Here's an overview of the common streams and the options available after Class 10 in India:
+            </h5>
+        </section>
+        <div class="science">
+            <h4>Science Stream Students</h4>
+        </div>
+        <h5>
+            The Science stream is one of the most popular choices for students who are interested in subjects like Physics, Chemistry, Biology, and Mathematics. It opens doors to a wide range of career options, especially in fields related to technology, medicine, engineering, research, and more.
+        </h5>
+
+        <div class="ten">
+            <!-- Left Section: For Students with Maths as their Core Subject -->
+            <div class="stu">
+                <img src="pcm-removebg-preview.png" alt="Maths Students" class="tenlogo">
+                <p class="content">This stream is for students interested in fields related to engineering, technology, and physical sciences. The focus here is on <strong><b>Mathematics</b></strong> and physical sciences (Physics and Chemistry), which are essential for various technical and engineering careers.</p>
+            </div>
+
+            <div class="description">
+                <p class="math">
+                    Subjects Offered:
+                </p>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                </ul>
+                <ul>
+                    <li>Physical Education</li>
+                    <li>Computer Science</li>
+                </ul>
+
+                <p class="career">Popular Career Options for Non-Medical Science Stream:</p>
+                <ul>
+                    <li>Engineering (Mechanical, Civil, Electrical, Computer Science, etc.)</li>
+                    <li>Architecture</li>
+                    <li>Data Science/AI</li>
+                    <li>Software Development/Programming</li>
+                    <li>Aerospace Engineering</li>
+                    <li>Robotics and Automation</li>
+                    <li>Cybersecurity</li>
+                    <li>Environmental Science</li>
+                    <li>Space Science & Research</li>
+                    <li>Defense (Technical Branch, DRDO, ISRO)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="twelve">    
+            <div class="descript">
+                <p class="math">
+                    Subjects Offered:
+                </p>
+                <ul>
+                    <li>Biology</li>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                </ul>
+                <ul>
+                    <li>Physical Education</li>
+                </ul>
+
+                <p class="career">Popular Career Options for Medical Science Stream:</p>
+                <ul>
+                    <li>MBBS (Bachelor of Medicine and Bachelor of Surgery)</li>
+                    <li>BDS (Bachelor of Dental Surgery)</li>
+                    <li>Pharmacy (B.Pharm)</li>
+                    <li>Nursing</li>
+                    <li>Physiotherapy</li>
+                    <li>Biomedical Science</li>
+                    <li>Biotechnology</li>
+                    <li>Genetics</li>
+                    <li>Medical Research</li>
+                    <li>Veterinary Science</li>
+                    <li>Public Health (MPH)</li>
+                </ul>
+            </div>
+            <div class="stud">
+                <img src="pcb-removebg-preview.png" alt="Medical Students" class="tenlogo">
+                <p class="content">This stream is for students who are interested in pursuing careers in the medical and healthcare fields. The core subjects in this stream focus on <strong><b>Biology</b></strong> and related sciences.</p>
+            </div>
+        </div>
+
+
+        <div class="commerce">
+            <h4>Commerce Stream Students</h4>
+        </div>
+        <div class="tent">
+            <!-- Left Section: For Commerce Stream Students -->
+            <div class="stuc">
+                <img src="commerce.png" alt="Commerce Students" class="tenlogo">
+                <p class="content">The Commerce stream is suitable for students interested in business, finance, economics, and accounts. It’s a versatile field that opens up numerous career paths in finance, business management, economics, and entrepreneurship.</p>
+              
+            </div>
+            <div class="description">
+                <p class="math">
+                    Subjects Offered:
+                </p>
+                <ul>
+                    <li> Accountancy</li>
+                    <li>Business Studies</li>
+                    <li>Economics</li>
+                </ul>
+                <ul>
+                    <li>Mathematic</li>
+                    <li>Entrepreneurship</li>
+                </ul>
+
+                <p class="career">Popular Career Options for Commerce Stream:</p>
+                <ul>
+                    <li>Chartered Accountant (CA)</li>
+                    <li>Company Secretary (CS)</li>
+                    <li>Financial Analyst</li>
+                    <li>Business Management</li>
+                    <li>Banking</li>
+                    <li>Marketing</li>
+                    <li>Entrepreneurship</li>
+                    <li>Economist</li>
+                    <li>Hotel Management</li>
+                    <li>Event Management</li>
+                    <li>Fashion Management</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="arts">
+            <h4>Humanities (Arts) Stream</h4>
+        </div>
+        <div class="twelveart">    
+            <div class="descriptart">
+                <p class="math">
+                    Subjects Offered:
+                </p>
+                <ul>
+                    <li>History</li>
+                    <li>Political Science</li>
+                    <li>Geography</li>
+                    <li>Economics</li>
+                </ul>
+                <ul>
+                    <li>Fine Arts</li>
+                    
+                </ul>
+
+                <p class="career">Popular Career Options for Humanities (Arts) Stream:</p>
+                <ul>
+                    <li>Law (LLB)</li>
+                    <li>Journalism</li>
+                    <li>Psychology</li>
+                    <li>Sociology</li>
+                    <li>Human Rights</li>
+                    <li>Public Administration</li>
+                    <li>Teaching</li>
+                    <li>Design (Fashion Design, Graphic Design, etc.)</li>
+                    <li>Event Management</li>
+                    <li>Social Work</li>
+                    <li>Content Writing</li>
+                </ul>
+        </div>
+        <div class="studart">
+            <img src="Arts-Stream-Subjects-removebg-preview.png" alt="Arts student" class="tenlogo">
+            <p class="content">The Humanities or Arts stream is often chosen by students with interests in subjects like History, Political Science, Literature, Sociology, Psychology, and more. It offers a broad spectrum of career opportunities, especially in fields like law, design, journalism, and social work.</p>
+        </div>
+    </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 CareerGaze. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
+``
